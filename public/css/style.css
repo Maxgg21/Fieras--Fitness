@@ -1,3 +1,4 @@
+@import url('navBar.css');
 /* 
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -103,3 +104,5 @@ hr {
 input, select {
   vertical-align:middle;
 }
+
+

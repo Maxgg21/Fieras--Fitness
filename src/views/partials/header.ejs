@@ -1,43 +1,41 @@
-  <nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-            <img src="/logo/logo.svg" alt="Bootstrap" width="150" height="150" />
-          </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+
+
+<nav class="navbar navbar-expand-lg bs-tertiary-color">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="/logo/logo.svg" alt="Bootstrap" width="180" height="180" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-            <a class="navbar-brand" href="/">
-                <img src="/logo/logo.svg" alt="Bootstrap" width="150" height="150" />
-              </a>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Mi</a>
-            </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Planes
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Plan Personalizado 2/S</a></li>
-                <li><a class="dropdown-item" href="#">Plan Personalizado 3/S</a></li>
-                <li><a class="dropdown-item" href="#">Plan A Distancia C/Seguimiento</a></li>
-                <li><a class="dropdown-item" href="#">Plan A Distancia S/Seguimiento</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contactemonos</a>
-              </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse navbar-rigth" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre mi</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Planes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Plan Personalizado 2/S</a></li>
+              <li><a class="dropdown-item" href="#">Plan Personalizado 3/S</a></li>
+              <li><a class="dropdown-item" href="#">Plan A Distancia C/Seguimiento</a></li>
+              <li><a class="dropdown-item" href="#">Plan A Distancia S/Seguimiento</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Contactemonos</a>
+          </li>
+          <li class="nav-item">
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
