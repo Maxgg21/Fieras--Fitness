@@ -30,7 +30,7 @@ time, mark, audio, video {
 
 body {
   line-height:1;
-  background-color: rgb(26, 6, 20);
+  background-color: rgb(255, 105, 188) !important;
 }
 
 article,aside,details,figcaption,figure,

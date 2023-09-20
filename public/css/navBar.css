@@ -1,11 +1,13 @@
+.navbar{
+    padding: 0 !important;
+}
+
 .navbar-expand-lg .navbar-collapse {
     flex-grow: inherit;
 }
 
-
 .navbar-brand{
     margin-right: none;
-    margin-left: var(--bs-navbar-brand-margin-end)
 }
 
 .nav-item {
@@ -19,6 +21,16 @@
 }
 
 .nav-item ion-icon {
-    padding: 0 0.5rem 0 0.5rem ;
+    padding: 0.5rem;
     font-size: 1.3rem;
+}
+
+.nav-item ion-icon:nth-child(1){
+    color: red;
+}
+.nav-item ion-icon:nth-child(2){
+    color: linear-gradient(90deg, rgba(63,94,251,1) 17%, rgba(252,70,107,1) 94%)
+}
+.nav-item ion-icon:nth-child(3){
+    color: green;
 }
