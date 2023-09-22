@@ -1,5 +1,6 @@
 .navbar{
     padding: 0 !important;
+    z-index: 500;
 }
 
 .navbar-expand-lg .navbar-collapse {

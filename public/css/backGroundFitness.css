@@ -1,0 +1,38 @@
+.backGroundImage{
+    background-image: url('../images/fierasFitnessBackGround.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: rgb(117 190 218 / 0.5);
+    height: 100vh;
+    z-index: 50;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.backGroundImage > div > h1 {
+    color: rgb(27, 26, 26);
+}
+
+@media (min-width: 800px) {
+    .backGroundImage{
+        height: 800px;
+    }   
+}
+
+@media (min-width: 820px) {
+    .backGroundImage{
+        position: relative;
+        top: -151px;
+    }     
+}
+
+@media (min-width: 1200px) {
+    .backGroundImage{
+        background-size: cover;
+        height: 800px;
+    }   
+}
