@@ -1,38 +1,48 @@
-.backGroundImage{
-    background-image: url('../images/fierasFitnessBackGround.jpg');
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-color: rgb(117 190 218 / 0.5);
-    height: 100vh;
-    z-index: 50;
-    opacity: 0.9;
+.backGroundImage {
+    min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    position: relative;
 }
 
+.backGroundImage::before {
+    content: '';
+    background-image: url('../images/fierasFitnessBackGround.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: -325px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+}
 
-.backGroundImage > div > h1 {
-    color: rgb(27, 26, 26);
+h1, h2 {
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    color: red;
+}
+
+.backGroundImage button {
+    position: relative;
+    background-color: green;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+button > a {
+    color: aliceblue;
+    text-decoration: none;
 }
 
 @media (min-width: 800px) {
-    .backGroundImage{
-        height: 800px;
-    }   
-}
-
-@media (min-width: 820px) {
-    .backGroundImage{
-        position: relative;
-        top: -151px;
-    }     
-}
-
-@media (min-width: 1200px) {
-    .backGroundImage{
+    .backGroundImage::before {
         background-size: cover;
-        height: 800px;
-    }   
+    }
 }
