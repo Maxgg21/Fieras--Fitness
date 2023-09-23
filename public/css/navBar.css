@@ -1,3 +1,14 @@
+.navContainer {
+    display: flex;
+    align-items: start;
+}
+
+.navContainer .navBarSticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .navbar{
     padding: 0 !important;
     z-index: 500;

@@ -1,5 +1,5 @@
 .backGroundImage {
-    min-height: 100vh;
+    min-height: 72vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,10 +11,10 @@
     content: '';
     background-image: url('../images/fierasFitnessBackGround.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     position: absolute;
-    top: -325px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
