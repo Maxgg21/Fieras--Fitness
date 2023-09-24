@@ -1,3 +1,4 @@
+
 .navContainer {
     display: flex;
     align-items: start;
@@ -12,6 +13,7 @@
 .navbar{
     padding: 0 !important;
     z-index: 500;
+    background-color: #ff69b4;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -32,6 +34,10 @@
     justify-content: end;
 }
 
+.nav-item a {
+    color: white;
+}
+
 .nav-item ion-icon {
     padding: 0.5rem;
     font-size: 1.3rem;
@@ -45,4 +51,15 @@
 }
 .nav-item ion-icon:nth-child(3){
     color: green;
+}
+
+.dropdown-menu.show {
+    background-color: #ff69b4 ;
+}
+
+
+/* scroll */
+.header-opacity {
+    opacity: 0.9;
+    background-color: #ff69b4;
 }
