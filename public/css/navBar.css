@@ -40,7 +40,6 @@
 
 .nav-item ion-icon {
     padding: 0.5rem;
-    font-size: 1.3rem;
 }
 
 .nav-item ion-icon:nth-child(1){
@@ -62,4 +61,10 @@
 .header-opacity {
     opacity: 0.9;
     background-color: #ff69b4;
+}
+
+@media (min-width: 992){
+    .navContainer .navbar .container-fluid .minBar .minBarDestok{
+        align-items: center;
+    }
 }
