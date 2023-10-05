@@ -4,7 +4,7 @@
     <div class="card-body">
       <h5 class="card-title"><%= plan.titulo %></h5>
       <p class="card-text"><%= toThousand(plan.precio) %></p>
-      <a href="#" class="btn btn-primary">Ver detalle</a>
+      <a href="/detailPlan/<%= plan.id%>" class="btn btn-primary">Ver detalle</a>
     </div>
   </div>
 <% });%>

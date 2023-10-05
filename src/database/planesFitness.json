@@ -6,7 +6,7 @@
        "aclaracion" : "Este plan no tiene en cuenta en la rutina plasmada, patologías y lesiones que el/la alumno/a padece o padeció, es por este motivo, que al momento de obtenerlo, se debe tener presente esta aclaración.",
        "objetivos" : "Consta de un acondicionamiento físico generalizado, en el cual trabajaremos distintos grupos musculares, incidiendo en los mismos de manera que se produzca descenso de peso corporal, tonificación y definición.", 
        "consultas": "En este plan, dispondrán, de la posibilidad de consultar dudas al número de la empresa, vía whatsapp en el horario de 9 a 16 hs de lunes a viernes.",
-       "medio de pago": "**Mercado Pago: con  DINERO EN CUENTA A MI MERCADO PAGO. <br> **Banco: transferencia o depósito SIN RECARGO NI DESCUENTO. Valor normal. <br> UNA VEZ ENVIADO EL PLAN, NO SE PUEDE CAMBIAR NI SE HACE DEVOLUCIÓN DE DINERO.",
+       "medioDePago": "**Mercado Pago: con  DINERO EN CUENTA A MI MERCADO PAGO. <br> **Banco: transferencia o depósito SIN RECARGO NI DESCUENTO. Valor normal. <br> UNA VEZ ENVIADO EL PLAN, NO SE PUEDE CAMBIAR NI SE HACE DEVOLUCIÓN DE DINERO.",
        "modalidad" : "Se le enviaran adjuntos al plan de entrenamiento, los videos, con la ejecución pertinente a cada ejercicio.",
        "precio": 5000,
        "imagen": "/images/planes/entrenamientoConSeguimiento.png"
@@ -18,7 +18,7 @@
        "aclaracion" : "Este plan no tiene en cuenta en la rutina plasmada, patologías y lesiones que el/la alumno/a padece o padeció, es por este motivo, que al momento de obtenerlo, se debe tener presente esta aclaración.",
        "objetivos" : "Consta de un acondicionamiento físico generalizado, en el cual trabajaremos distintos grupos musculares, incidiendo en los mismos de manera que se produzca descenso de peso corporal, tonificación y definición.", 
        "consultas": "**Este plan no cuenta*** con la opción de tener contacto con la empresa, siendo que se obtiene la rutina con todo lo detallado, pero ***sin seguimiento del tutor a cargo.*** Se recomienda que el plan descrito, sea adquirido por aquellos alumnos que tengan afianzados ciertos conocimientos previos en el área de la actividad física y no requieran de ningún tipo de dudas al respecto.",
-       "medio de pago": "**Mercado Pago: con  DINERO EN CUENTA A MI MERCADO PAGO. <br> **Banco: transferencia o depósito SIN RECARGO NI DESCUENTO. Valor normal. <br> UNA VEZ ENVIADO EL PLAN, NO SE PUEDE CAMBIAR NI SE HACE DEVOLUCIÓN DE DINERO.",
+       "medioDePago": "**Mercado Pago: con  DINERO EN CUENTA A MI MERCADO PAGO. <br> **Banco: transferencia o depósito SIN RECARGO NI DESCUENTO. Valor normal. <br> UNA VEZ ENVIADO EL PLAN, NO SE PUEDE CAMBIAR NI SE HACE DEVOLUCIÓN DE DINERO.",
        "modalidad" : "Se le enviaran adjuntos al plan de entrenamiento, los videos, con la ejecución pertinente a cada ejercicio.",
        "precio": 6000,
        "imagen": "/images/planes/entrenamientoSinSeguimiento.png"
@@ -26,7 +26,7 @@
     {
         "id": 3,
        "titulo" : "Plan a personalizado a distancia", 
-       "medio de pago": "**Mercado Pago: con  DINERO EN CUENTA A MI MERCADO PAGO. <br> **Banco: transferencia o depósito SIN RECARGO NI DESCUENTO. Valor normal. <br> UNA VEZ ENVIADO EL PLAN, NO SE PUEDE CAMBIAR NI SE HACE DEVOLUCIÓN DE DINERO.",
+       "medioDePago": "**Mercado Pago: con  DINERO EN CUENTA A MI MERCADO PAGO. <br> **Banco: transferencia o depósito SIN RECARGO NI DESCUENTO. Valor normal. <br> UNA VEZ ENVIADO EL PLAN, NO SE PUEDE CAMBIAR NI SE HACE DEVOLUCIÓN DE DINERO.",
        "consultas": "En este plan, dispondrán, de la posibilidad de consultar dudas al número de la empresa, vía whatsapp en el horario de 9 a 16 hs de lunes a viernes.",
        "modalidad" : "Al momento de obtener dicho plan, se les adjuntará y enviará una planilla, la cual el alumno debe entregar con suma responsabilidad al momento de ser completada. Una vez devuelta la ficha, se planificará la rutina, teniendo en cuenta todo lo antes descrito; también podrán seleccionar la cantidad de estímulos semanales que recibirán.",
        "objetivos" : "En dicho plan de entrenamiento, el alumno es quien elige su objetivo, ya sea: <br> Descenso de peso corporal, Hipertrofia,Fuerza máxima, Fuerza potencia, Resistencia, Definición", 
@@ -38,7 +38,7 @@
     {
         "id": 4,
        "titulo" : "Plan a personalizado presencial",
-       "medio de pago": "**Mercado Pago: con  DINERO EN CUENTA A MI MERCADO PAGO. <br> **Banco: transferencia o depósito SIN RECARGO NI DESCUENTO. Valor normal. <br> UNA VEZ ENVIADO EL PLAN, NO SE PUEDE CAMBIAR NI SE HACE DEVOLUCIÓN DE DINERO.",
+       "medioDePago": "**Mercado Pago: con  DINERO EN CUENTA A MI MERCADO PAGO. <br> **Banco: transferencia o depósito SIN RECARGO NI DESCUENTO. Valor normal. <br> UNA VEZ ENVIADO EL PLAN, NO SE PUEDE CAMBIAR NI SE HACE DEVOLUCIÓN DE DINERO.",
        "consultas": "En este plan, dispondrán, de la posibilidad de consultar dudas al número de la empresa, vía whatsapp en el horario de 9 a 16 hs de lunes a viernes.",
        "modalidad" : "Al momento de obtener dicho plan, se les adjuntará y enviará una planilla, la cual el alumno debe entregar con suma responsabilidad al momento de ser completada. Una vez devuelta la ficha, se planificará la rutina, teniendo en cuenta todo lo antes descrito; también podrán seleccionar la cantidad de estímulos semanales que recibirán.",
        "objetivos" : "En dicho plan de entrenamiento, el alumno es quien elige su objetivo, ya sea: <br> Descenso de peso corporal, Hipertrofia,Fuerza máxima, Fuerza potencia, Resistencia, Definición", 
