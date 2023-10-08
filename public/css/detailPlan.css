@@ -2,6 +2,10 @@
     background-color: #ff00fb;
 }
 
-@media (min-width: 768px) {
 
+@media (min-width: 768px) {
+    .mainContainer .containerVideo {
+        display: flex;
+        flex-direction: row !important;
+    }
 }

@@ -55,7 +55,7 @@
 }
 
 
-@media (min-width: 992){
+@media (min-width: 992px){
     .navContainer .navbar .container-fluid .minBar .minBarDestok{
         align-items: center;
     }

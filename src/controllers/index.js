@@ -13,6 +13,7 @@ module.exports = {
             const plan = planes.find(plan => plan.id === +req.params.id);
             const videoPlan = videosPlanes.find(video => video.id === plan.id) 
             return res.render('detailPlan',{
+                planes,
                plan,
                videoPlan,
                toThousand
