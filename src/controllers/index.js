@@ -1,4 +1,4 @@
-const {planes, videosPlanes} = require("../database")
+const {planes} = require("../database")
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 module.exports = {
@@ -11,11 +11,9 @@ module.exports = {
     detailPlan: (req, res) => {
         try {
             const plan = planes.find(plan => plan.id === +req.params.id);
-            const videoPlan = videosPlanes.find(video => video.id === plan.id) 
-            return res.render('detailPlan',{
-                planes,
+            return res.render('detailPlan', {
+               planes,
                plan,
-               videoPlan,
                toThousand
             })
         } catch (error) {
