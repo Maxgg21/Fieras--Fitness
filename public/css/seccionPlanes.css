@@ -1,3 +1,10 @@
+.planesSeccion .btnColor {
+    background-color:   #fd79fd;
+}
+.planesSeccion .btnColor:hover {
+    background-color: #ff00fb !important;
+}
+
 
 @media (min-width :700px) {
     .mainContainer div .planesSeccion {

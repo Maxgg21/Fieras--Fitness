@@ -14,23 +14,28 @@
                     Planes
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Plan Personalizado a distancia</a></li>
-                    <li><a class="dropdown-item" href="#">Plan Personalizado Presencial</a></li>
-                    <li><a class="dropdown-item" href="#">Plan A Distancia C/Seguimiento</a></li>
-                    <li><a class="dropdown-item" href="#">Plan A Distancia S/Seguimiento</a></li>
+                    <% planes.forEach(plan => {%>
+                      <li><a class="dropdown-item" href="/detailPlan/<%= plan.id%>"><%= plan.titulo %></a></li>
+                    <% })%>
                   </ul>
               </nav>
         </div>
         <div class="titleIcons">
             <h4>Seguinos en:</h4>
             <div class="iconsNetWorks  text-white">
-                <ion-icon name="logo-youtube"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-whatsapp"></ion-icon>
+                <a href="https://www.youtube.com/@fierasfitness" target="_blank" rel="noopener noreferrer">
+                    <ion-icon class="fs-3" name="logo-youtube"></ion-icon>
+                  </a>
+                  <a href="https://www.instagram.com/fieras_fitness/" target="_blank" rel="noopener noreferrer">
+                    <ion-icon class="fs-3" name="logo-instagram"></ion-icon>
+                  </a>
+                  <a href="https://wa.me/54299155782703/?text=hola%20me%20intersa%20su%20plan" target="_blank" rel="noopener noreferrer">
+                    <ion-icon class="fs-3" name="logo-whatsapp"></ion-icon>
+                  </a>
             </div>
         </div>
     </section>
     <div class="copyRigth">
-        <div>Copyright © 2023. Todos los derechos reservados. <br> Diseñada por <a href="#">Lionel Maximiliano Gegena</a></div>
+        <div>Copyright © 2023. Todos los derechos reservados. Diseñada por <a href="https://www.linkedin.com/in/lionel-gegena/" target="_blank">Lionel Maximiliano Gegena</a></div>
     </div>
 </footer>

@@ -7,34 +7,39 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse navbar-rigth minBar" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end minBarDestok">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end minBarDestok d-flex align-items-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a id="subNavBar" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Planes
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Plan Personalizado 2/S</a></li>
-              <li><a class="dropdown-item" href="#">Plan Personalizado 3/S</a></li>
-              <li><a class="dropdown-item" href="#">Plan A Distancia C/Seguimiento</a></li>
-              <li><a class="dropdown-item" href="#">Plan A Distancia S/Seguimiento</a></li>
+              <% planes.forEach(plan => {%>
+                <li><a class="dropdown-item" href="/detailPlan/<%= plan.id%>"><%= plan.titulo %></a></li>
+              <% })%>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre mi</a>
+            <a class="nav-link" href="#seccionSobreMi">Sobre mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Contacto</a>
+            <a class="nav-link" href="#seccionContacto">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Preguntas Frecuentes</a>
+            <a class="nav-link" href="#seccionPreguntas">Preguntas Frecuentes</a>
           </li>
           <li class="nav-item ">
-            <ion-icon class="fs-3" name="logo-youtube"></ion-icon>
-            <ion-icon class="fs-3" name="logo-instagram"></ion-icon>
-            <ion-icon class="fs-3" name="logo-whatsapp"></ion-icon>
+            <a href="https://www.youtube.com/@fierasfitness" target="_blank" rel="noopener noreferrer">
+              <ion-icon class="fs-3" name="logo-youtube"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/fieras_fitness/" target="_blank" rel="noopener noreferrer">
+              <ion-icon class="fs-3" name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://wa.me/54299155782703/?text=hola%20me%20intersa%20su%20plan" target="_blank" rel="noopener noreferrer">
+              <ion-icon class="fs-3" name="logo-whatsapp"></ion-icon>
+            </a>
           </li>
         </ul>
       </div>

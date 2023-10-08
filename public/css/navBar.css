@@ -36,20 +36,11 @@
 
 .nav-item a {
     color: white;
+    text-decoration: none;
 }
 
-.nav-item ion-icon {
+.nav-item  a ion-icon {
     padding: 0.5rem;
-}
-
-.nav-item ion-icon:nth-child(1){
-    color: red;
-}
-.nav-item ion-icon:nth-child(2){
-    color: linear-gradient(90deg, rgba(63,94,251,1) 17%, rgba(252,70,107,1) 94%)
-}
-.nav-item ion-icon:nth-child(3){
-    color: green;
 }
 
 .dropdown-menu.show {
@@ -62,6 +53,7 @@
     opacity: 0.9;
     background-color: #ff69b4;
 }
+
 
 @media (min-width: 992){
     .navContainer .navbar .container-fluid .minBar .minBarDestok{

@@ -10,7 +10,7 @@
             <h1>"¡Transforma tu Vida con Nuestros Planes de Fitness Personalizados!"</h1>
             <h2>¡Consigue tu mejor versión!</h2>
             <button>
-                <a href=https://api.whatsapp.com/send/?phone=541124539378>Envíanos un Whatsapp</a>
+                <a href="https://wa.me/54299155782703/?text=hola%20me%20intersa%su%plan" target="_blank">Envíanos un Whatsapp</a>
             </button>
         </section>
         <div>
@@ -19,7 +19,7 @@
               <%- include('partials/cardPlanes.ejs')%>
             </div>
         </div>
-        <div class="p-3 aboutMeSeccion" style="width: 100%; display: flex; justify-content: center;">
+        <div id="seccionSobreMi" class="p-3 aboutMeSeccion d-flex justify-content-center" style="width: 100%;">
            <div class="card mb-3" style="max-width: 1000px;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -35,22 +35,26 @@
           </div>
         </div>
         <div class="d-flex justify-content-center align-items-center flex-column m-3">
-          <h2 class="text-center fw-bold">Preguntas Frecuentes</h2>
+          <h2 id="seccionPreguntas" class="text-center fw-bold">Preguntas Frecuentes</h2>
            <%- include("partials/preguntaFrecuentes.ejs")%>
         </div>
         <div class="d-flex justify-content-center align-items-center flex-column style="background-color:chocolate; width: 100%;
         height: 300px;">
-            <h2>Contactos</h2>
+            <h2 id="seccionContacto" >Contactos</h2>
             <div class="container-md">
               <p class="text-center">
                 Estaremos respondiendo sus consultas en el horiario de atención de Lunes a Sábados de 8 a 17 hs.
               </p>
               <ul class="d-flex justify-content-center align-items-center" style="padding-left: 0;">
                 <li class="m-3" style=" list-style-type: none;">
-                  <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
+                  <a href="https://www.instagram.com/fieras_fitness/" target="_blank" rel="noopener noreferrer">
+                    <ion-icon class="fs-2" name="logo-instagram"></ion-icon>
+                  </a>
                 </li>
                 <li class="m-3" style=" list-style-type: none;">
-                  <ion-icon class="fs-2" name="logo-whatsapp"></ion-icon>
+                  <a href="https://wa.me/54299155782703/?text=hola%20me%20intersa%20su%20plan" target="_blank" rel="noopener noreferrer">
+                    <ion-icon class="fs-2" name="logo-whatsapp"></ion-icon>
+                  </a>
                 </li>
               </ul>
             </div>

@@ -3,8 +3,8 @@
     <img src="<%= plan.imagen %>" class="card-img-top" alt="<%= plan.titulo %>">
     <div class="card-body">
       <h5 class="card-title"><%= plan.titulo %></h5>
-      <p class="card-text"><%= toThousand(plan.precio) %></p>
-      <a href="/detailPlan/<%= plan.id%>" class="btn btn-primary">Ver detalle</a>
+      <p class="card-text">$<%= toThousand(plan.precio) %></p>
+      <a href="/detailPlan/<%= plan.id%>" class="btn btnColor">Ver detalle</a>
     </div>
   </div>
 <% });%>

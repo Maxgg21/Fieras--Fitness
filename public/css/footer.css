@@ -14,7 +14,17 @@
     align-items: center;
 }
 
-.titleIcons .iconsNetWorks > ion-icon{
+.titleIcons .iconsNetWorks > a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.titleIcons .iconsNetWorks > a:hover {
+    color: rgb(255, 125, 3);
+}
+
+
+.titleIcons .iconsNetWorks > a ion-icon{
     padding: 0 0.5rem 0 0.5rem;
     font-size: 2rem;
 }
@@ -24,6 +34,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #fff;
+    margin-top: 1rem;
 }
 
 

@@ -3,7 +3,6 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 module.exports = {
     index: (req, res) => {
-
         res.render('index', {
             planes,
             toThousand
@@ -15,7 +14,8 @@ module.exports = {
             const videoPlan = videosPlanes.find(video => video.id === plan.id) 
             return res.render('detailPlan',{
                plan,
-               videoPlan
+               videoPlan,
+               toThousand
             })
         } catch (error) {
             console.log(error)            
