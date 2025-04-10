@@ -19,10 +19,15 @@ Diseño en Figma:
 ## 📂 Estructura del Proyecto (simplificada)
 
 ├── node_modeles
-├── public/ # Archivos estáticos (CSS, imágenes) 
+
+├── public/ # Archivos estáticos (CSS, imágenes)
+
 ├── src
+ 
     ├── controllers/ # Rutas de controladores 
+    
         ├──index.js
+        
     ├── database/ # Ruta de base de datos
         ├──index.js
         ├──planesFitnes.json  
