@@ -14,7 +14,7 @@ Diseño en Figma:
 - Node.js
 - Express
 - HTML/CSS (en frontend)
-- [Figma](https://figma.com) (para el diseño)
+
 
 ## 📂 Estructura del Proyecto (simplificada)
 
