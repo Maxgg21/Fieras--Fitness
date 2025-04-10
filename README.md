@@ -6,7 +6,12 @@ Incluye secciones de presentación como **Quiénes somos** y un **Home** con inf
 ## 🌐 Demo
 
 Diseño en Figma:  
-![Demo Figma](https://fieras-fitness.onrender.com/)  
+![Demo Figma](https://www.figma.com/design/OYCWvwWClwrw7A2MNrY922/FierasFitnes)  
+
+## 🌐 Demo web
+
+Hospedado en onRender
+👉 [https://fieras-fitness.onrender.com](https://fieras-fitness.onrender.com)
 
 ## 🚀 🧱  Tecnologías Utilizadas
 
