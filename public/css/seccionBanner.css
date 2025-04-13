@@ -1,5 +1,5 @@
 .heroSection {
-    min-height: 100vh;
+    min-height: 85vh;
   }
   
   /* Imagen que cubre el contenedor */
@@ -52,6 +52,7 @@
   @media (min-width: 992px) {
     .heroSection {
       justify-content: center; /* Centrar contenido */
+      min-height: 85vh;
     }
   
     .heroImageContainer {
