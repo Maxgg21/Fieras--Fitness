@@ -9,7 +9,7 @@
        "medioDePago": "**Mercado Pago: con  DINERO EN CUENTA A MI MERCADO PAGO. <br> **Banco: transferencia o depósito SIN RECARGO NI DESCUENTO. Valor normal. <br> UNA VEZ ENVIADO EL PLAN, NO SE PUEDE CAMBIAR NI SE HACE DEVOLUCIÓN DE DINERO.",
        "modalidad" : "Se le enviaran adjuntos al plan de entrenamiento, los videos, con la ejecución pertinente a cada ejercicio.",
        "precio": 5000,
-       "imagen": "/images/planes/entrenamientoConSeguimiento.png",
+       "imagen": "/images/planes/imagen5.webp",
        "acceso": "Con acceso a consultas"
     },
     {
@@ -22,7 +22,7 @@
        "medioDePago": "**Mercado Pago: con  DINERO EN CUENTA A MI MERCADO PAGO. <br> **Banco: transferencia o depósito SIN RECARGO NI DESCUENTO. Valor normal. <br> UNA VEZ ENVIADO EL PLAN, NO SE PUEDE CAMBIAR NI SE HACE DEVOLUCIÓN DE DINERO.",
        "modalidad" : "Se le enviaran adjuntos al plan de entrenamiento, los videos, con la ejecución pertinente a cada ejercicio.",
        "precio": 6000,
-       "imagen": "/images/planes/entrenamientoSinSeguimiento.png",
+       "imagen": "/images/planes/imagen6.webp",
        "acceso": "Sin acceso a consultas"
     },
     {
@@ -35,7 +35,7 @@
        "descripcion": "Los planes de entrenamiento personalizados, cuentan con el docente presente, el cual podrá enseñar, corregir y acondicionar los ejercicios de acuerdo al alumno. <br> El material de trabajo será brindado por dicho docente. las clases personalizadas a distancia, los alumnos deberán reportar cada 2 semanas, su peso y las fotos frontales, laterales y posteriores bipedestados (de pie); al finalizar cada semana deberán remitir vía whatsapp cómo se sienten, dudas, y videos ejecutando los ejercicios.",
        "aclaracion": "Se debe aclarar al momento de obtener este plan de que si posee alguna patologías y/o lesiones que el/la alumno/a padece o padeció, para asi planificar una rutira acorde al caso del alumno/a",
        "precio": 7000,
-       "imagen": "/images/planes/planPersonalizadoADistancia.png",
+       "imagen": "/images/planes/imagen20.webp",
        "acceso": "Con acceso a consultas"
     },
     {
@@ -48,7 +48,7 @@
        "descripcion": "Los planes de entrenamiento personalizados, cuentan con el docente presente, el cual podrá enseñar, corregir y acondicionar los ejercicios de acuerdo al alumno. El material de trabajo será brindado por dicho docente. Los planes de entrenamiento tienen una duración de 4 semanas (1 mes). Las clases presenciales se brindan en el horario de 20 a 21 hs, en Neuquén Capital",
        "aclaracion": "Se debe aclarar al momento de obtener este plan de que si posee alguna patologías y/o lesiones que el/la alumno/a padece o padeció, para asi planificar una rutira acorde al caso del alumno/a",
        "precio": 8000,
-       "imagen": "/images/planes/planPersonalizadoPresencial.jpg",
+       "imagen": "/images/planes/imagen1.webp",
        "acceso": "Con acceso a consultas"
     }
 ]

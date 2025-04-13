@@ -16,6 +16,15 @@
     background-color: #800120;
 }
 
+.navbar .container-fluid .collapse .navbar-nav {
+    border-radius: 24px;
+}
+
+.navbar .container-fluid .collapse .navbar-nav {
+    border-radius: 24px;
+}
+
+
 .navbar-expand-lg .navbar-collapse {
     flex-grow: inherit;
 }
@@ -31,6 +40,8 @@
 .navbar-nav .nav-link.active {
     color: none;
 }
+
+
 
 .nav-item:nth-child(5) {
     display: flex;
@@ -53,6 +64,9 @@
     --bs-dropdown-border-color: none ;
 }
 
+.dropdown-item:hover {
+    background-color: none;
+}
 
 
 /* scroll */
