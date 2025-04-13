@@ -1,0 +1,85 @@
+.heroSection {
+    min-height: 100vh;
+  }
+  
+  /* Imagen que cubre el contenedor */
+  .heroImageContainer {
+    height: 82vh;
+  }
+  
+  .heroImageContainer img {
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
+  }
+  
+  .floatingText {
+    top: 50%; /* Subimos el contenido flotante */
+    transform: translate(-50%, -40%); /* Centrado horizontal + pequeño ajuste vertical */
+    left: 50%;
+    
+  }
+  
+  
+  .floatingText h1,
+  .floatingText h2 {
+    text-shadow: 0 2px 5px #FF914D;
+  }
+  
+  /* Estilo para mobile: título en un renglón */
+.floatingText h1 {
+  white-space: nowrap;      /* Mantiene el título en una sola línea */
+  font-size: 3.2rem;         /* Ajustá si querés más grande o más chico */
+}
+
+/* Subtítulo con 3 líneas y centrado */
+.floatingText h2 {
+  max-width: 280px;          /* Limita el ancho para forzar saltos de línea */
+  font-size: 1.3rem;
+  margin: 0 auto 1rem auto;  /* Centrado y espacio inferior */
+  line-height: 1.4;
+  word-break: break-word;    /* Ayuda con palabras largas si hay */
+}
+
+/* Botón centrado debajo del texto */
+.floatingText a.btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+
+  /* Estilos específicos para desktop */
+  @media (min-width: 992px) {
+    .heroSection {
+      justify-content: center; /* Centrar contenido */
+    }
+  
+    .heroImageContainer {
+      height: 80vh;
+      width: 95%; /* Ajuste de ancho */
+      margin-left: 5%; /* Empuja un poco hacia el centro */
+      
+    }
+  
+    .heroImageContainer img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+    }
+  
+    .heroTextContainer {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem;
+      text-shadow: 0 2px 5px #FF914D;
+    }
+  
+    .floatingText {
+      display: none;
+    }
+
+
+  }
+  

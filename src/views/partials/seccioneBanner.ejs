@@ -1,18 +1,21 @@
-<section class="containerBanner">
-    <div class="contanerFoto container-sm">
-        <img src="/images/imagen12.webp" class="img-fluid rounded-start" alt="" sizes="" srcset="">
+<section class="heroSection d-flex flex-column flex-lg-row w-100">
+    <!-- Imagen con texto flotante en mobile -->
+    <div class="heroImageContainer position-relative w-100 w-lg-50">
+      <img src="images/imagen12.webp" alt="Transformación fieras-fitness" class="img-fluid w-100 h-100 object-fit-cover" style="max-height: 80vh;">
+  
+      <!-- Texto flotante SOLO en mobile -->
+      <div class="floatingText d-lg-none position-absolute start-50 translate-middle-x text-center text-white ">
+        <h1 class="fw-bold mb-3">¡FIERTAS FITNESS!</h1>
+        <h2 class="mb-1">nos enfocamos en mejorar  <br> el rendimineto deportivo <br>mediantes habitos saludables</h2>
+        <a href="https://wa.me/54299155782703/?text=hola%20me%20interesa%20su%20plan" class="btn btn-warning">Envíanos un WhatsApp</a>
+      </div>
     </div>
-    <div class="contanerTexto">
-        <h1>"¡FIERAS FITNESS"</h1>
-        <h2>¡nos enfocamos en <br>
-            mejorar el rendimineto deportivo mediantes <br>
-             habitos saludables
-        <button>
-            <a href="https://wa.me/54299155782703/?text=hola%20me%20intersa%su%plan" target="_blank">Envíanos un Whatsapp</a>
-        </button>
+  
+    <!-- Texto fijo en desktop -->
+    <div class="heroTextContainer d-none d-lg-flex flex-column justify-content-center align-items-start p-5 w-100 w-lg-50">
+      <h1 class="fw-bold mb-3">¡FIERTAS FITNESS!</h1>
+      <h2 class="mb-4">nos enfocamos en 
+        mejorar el rendimineto deportivo mediantes habitos saludables</h2>
+      <a href="https://wa.me/54299155782703/?text=hola%20me%20interesa%20su%20plan" class="btn btn-warning">Envíanos un WhatsApp</a>
     </div>
-    <div class="contanerIconos">
-        <ion-icon name="logo-top"></ion-icon>
-        <ion-icon name="logo-instagram"></ion-icon>
-    </div>
-</section>
+  </section>
