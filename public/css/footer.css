@@ -1,3 +1,7 @@
+.conteinerFooter {
+    background-color: #800120
+}
+
 .pageFooter {
     display: flex;
     flex-direction: column;

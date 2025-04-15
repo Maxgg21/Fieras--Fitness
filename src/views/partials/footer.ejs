@@ -1,41 +1,70 @@
-<footer class="conteinerFooter" style="background-color: #ff69b4;">
-    <section class="pageFooter">
-        <div>
-            <a href="/">
-                <img src="/logo/logo.svg" alt="" width="180" height="150" />
-            </a>
-        </div>
-        <div class="navFooter">
-            <nav class="nav" >
-                <a class="nav-link active  text-white" aria-current="page" href="#">Home</a>
-                <a class="nav-link  text-white" href="#">Sobre mi </a>
-                <a class="nav-link  text-white">Contactos</a>
-                <a class="nav-link dropdown-toggle  text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Planes
-                  </a>
-                  <ul class="dropdown-menu">
-                    <% planes.forEach(plan => {%>
-                      <li><a class="dropdown-item" href="/detailPlan/<%= plan.id%>"><%= plan.titulo %></a></li>
-                    <% })%>
-                  </ul>
-              </nav>
-        </div>
-        <div class="titleIcons">
-            <h4>Seguinos en:</h4>
-            <div class="iconsNetWorks  text-white">
-                <a href="https://www.youtube.com/@fierasfitness" target="_blank" rel="noopener noreferrer">
-                    <ion-icon class="fs-3" name="logo-youtube"></ion-icon>
-                  </a>
-                  <a href="https://www.instagram.com/fieras_fitness/" target="_blank" rel="noopener noreferrer">
-                    <ion-icon class="fs-3" name="logo-instagram"></ion-icon>
-                  </a>
-                  <a href="https://wa.me/54299155782703/?text=hola%20me%20intersa%20su%20plan" target="_blank" rel="noopener noreferrer">
-                    <ion-icon class="fs-3" name="logo-whatsapp"></ion-icon>
-                  </a>
-            </div>
-        </div>
-    </section>
-    <div class="copyRigth">
-        <div>Copyright © 2023. Todos los derechos reservados. Diseñada por <a href="https://www.linkedin.com/in/lionel-gegena/" target="_blank">Lionel Maximiliano Gegena</a></div>
+<footer class="conteinerFooter">
+  <section class="pageFooter">
+    <div>
+      <a href="/">
+        <img src="/logo/logo.svg" alt="" width="180" height="150" />
+      </a>
     </div>
+    <div class="navFooter">
+      <nav class="nav">
+        <a class="nav-link active text-white" aria-current="page" href="#"
+          >Home</a
+        >
+        <a
+          class="nav-link dropdown-toggle text-white"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Planes
+        </a>
+        <ul class="dropdown-menu">
+          <% planes.forEach(plan => {%>
+          <li>
+            <a class="dropdown-item" href="/detailPlan/<%= plan.id%>"
+              ><%= plan.titulo %></a
+            >
+          </li>
+          <% })%>
+        </ul>
+        <a class="nav-link text-white" href="#">Sobre mi </a>
+        <a class="nav-link text-white">Contactos</a>
+      </nav>
+    </div>
+    <div class="titleIcons">
+      <h4>Seguinos en:</h4>
+      <div class="iconsNetWorks text-white">
+        <a
+          href="https://www.youtube.com/@fierasfitness"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ion-icon class="fs-3" name="logo-youtube"></ion-icon>
+        </a>
+        <a
+          href="https://www.instagram.com/fieras_fitness/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ion-icon class="fs-3" name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          href="https://wa.me/54299155782703/?text=hola%20me%20intersa%20su%20plan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ion-icon class="fs-3" name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="copyRigth">
+    <div>
+      Copyright © 2025. Todos los derechos reservados. Diseñada por
+      <a href="https://www.linkedin.com/in/lionel-gegena/" target="_blank"
+        >Lionel Maximiliano Gegena</a
+      >
+    </div>
+  </div>
 </footer>
