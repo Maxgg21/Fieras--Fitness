@@ -2,10 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 62vh;
-    background-color: #ff0000;
+    min-height: 70vh;
+    background: #FF6F1F;
+    background: radial-gradient(circle, rgba(255, 111, 31, 1) 29%, rgba(255, 235, 102, 1) 98%);
     color: #f0f0f0;
     overflow: hidden;
+}
+
+.contenedorTestimonio h2 {
+    color: #505050;
 }
 
 .swiper {

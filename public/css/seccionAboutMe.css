@@ -1,5 +1,6 @@
 .aboutMeSection {
-  background-color: #ffeb66;
+  background: #FF6F1F;
+    background: radial-gradient(circle, rgba(255, 111, 31, 1) 29%, rgba(255, 235, 102, 1) 98%);
 }
 
 /* Titulo */
