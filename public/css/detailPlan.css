@@ -1,25 +1,11 @@
-.mainContainer .containerVideo .card .card-header {
-    background-color: #ff00fb;
+
+.mainContainer .contenedorCard .row > * {
+    max-width: 73%!important;
 }
 
-.mainContainer .containerVideo .cardImagen {
-    max-width: 600px; 
-    border: 3px #ff00fb solid;
-    border-radius: 0.5%;
+@media (min-width: 770px) {
+    .mainContainer .contenedorCard .row .contedorImagen {
+        max-width: 25%!important;
+    }   
 }
-
-.mainContainer .containerVideo .card .card-body .btnColor {
-    background-color:   #fd79fd;
-}
-
-.mainContainer .containerVideo .card .card-body .btnColor:hover {
-    background-color: #ff00fb !important;
-}
-
-
-@media (min-width: 768px) {
-    .mainContainer .containerVideo {
-        display: flex;
-        flex-direction: row !important;
-    }
-}
+ 

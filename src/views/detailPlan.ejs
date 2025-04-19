@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("partials/head")%>
-<body>
-        <header class="navContainer">
-            <%- include("partials/header.ejs") %>
-        </header>
-        <section id="mainContainer" class="mainContainer" style="width: 100%;">
-            <div class="titulo">
-                <h1 class="text-center m-4"><%= plan.titulo %> </h1>
-            </div>
-            <div class="containerVideo d-flex flex-column justify-content-center align-items-center">
-                <div class="cardImagen m-2">
-                    <img src="<%= plan.imagen %>" class="card-img-top" alt="<%= plan.titulo %>">
-                </div>
-                <div class="card text-center mb-3 m-4" style="width: 18rem;">
-                    <div class="card-header text-white">
-                        <h5 class="card-title"><%= plan.titulo %></h5>
-                    </div>
-                    <div class="card-body">
-                      <p class="card-text"><%- plan.acceso %></p>
-                      <p class="card-text">$<%= toThousand(plan.precio) %></p>
-                      <a href="https://wa.me/54299155782703/?text=hola%20me%20intersa%20su%20plan%20<%-plan.titulo%>" class="btn btnColor" target="_blank">Comprar</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="m-3">
-            <%- include("partials/acordionDetailPlan.ejs") %>
-        </section>
-        <%- include("partials/footer.ejs") %>
-        <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script defer src="/js/headerNav.js"></script>
-</body>
+  <%- include("partials/head")%>
+  <body>
+    <header class="navContainer"><%- include("partials/header.ejs") %></header>
+    <section id="mainContainer" class="mainContainer">
+      <article
+        class="d-flex flex-column align-items-center contenedorCard mt-1"
+      >
+        <h2 class="text-center fw-bold text-bordo"><%= plan.titulo %></h2>
+        <div class="row align-items-center justify-content-evenly flex-wrap">
+          <div class="col-md-6 text-center mb-4 mb-md-0 contedorImagen">
+            <img
+              src="<%= plan.imagen %>"
+              alt="Plan de entrenamiento"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+
+          <div class="col-md-6 text-center text-md-start">
+            <h5 class="text-color-cafe fw-bold mb-3">mas detalles</h5>
+            <p class="text-muted">
+              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+              archivos de texto. Lorem Ipsum ha sido el texto de relleno
+              estándar de las industrias desde el año 1500, cuando un impresor
+              (N. del T. persona que se dedica a la imprenta) desconocido usó
+              una galería de textos y los mezcló de tal manera que logró hacer
+              un libro de textos.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="m-3">
+      <%- include("partials/acordionDetailPlan.ejs") %>
+    </section>
+    <%- include("partials/footer.ejs") %>
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="/js/headerNav.js"></script>
+  </body>
 </html>
