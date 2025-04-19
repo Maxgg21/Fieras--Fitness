@@ -55,6 +55,10 @@
     text-decoration: none;
 }
 
+.iconsNetWorks > a:hover {
+    color: rgb(255, 125, 3);
+}
+
 .nav-item  a ion-icon {
     padding: 0.5rem;
 }

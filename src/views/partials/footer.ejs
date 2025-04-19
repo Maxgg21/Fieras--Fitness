@@ -5,35 +5,34 @@
         <img src="/logo/logo.svg" alt="" width="180" height="150" />
       </a>
     </div>
-    <div class="navFooter">
-      <nav class="nav">
-        <a class="nav-link active text-white" aria-current="page" href="#"
-          >Home</a
-        >
-        <a
-          class="nav-link dropdown-toggle text-white"
-          href="#"
-          role="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Planes
-        </a>
-        <ul class="dropdown-menu">
-          <% planes.forEach(plan => {%>
-          <li>
-            <a class="dropdown-item" href="/detailPlan/<%= plan.id%>"
-              ><%= plan.titulo %></a
-            >
-          </li>
-          <% })%>
-        </ul>
-        <a class="nav-link text-white" href="#">Sobre mi </a>
-        <a class="nav-link text-white">Contactos</a>
-      </nav>
+    <div>
+      <ul class="navBarFooter navbar-nav me-auto mb-2 mb-lg-0 text-end minBarDestok d-flex align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a id="subNavBar" class="nav-link dropdown-toggle text-center text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Planes
+          </a>
+          <ul class="dropdown-menu">
+            <% planes.forEach(plan => {%>
+              <li><a class="dropdown-item" href="/detailPlan/<%= plan.id%>"><%= plan.titulo %></a></li>
+            <% })%>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#seccionSobreMi">Sobre mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#seccionContacto">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#seccionPreguntas">Preguntas Frecuentes</a>
+        </li>
+      </ul> 
     </div>
     <div class="titleIcons">
-      <h4>Seguinos en:</h4>
+      <h4 class="text-white">Seguinos en:</h4>
       <div class="iconsNetWorks text-white">
         <a
           href="https://www.youtube.com/@fierasfitness"
