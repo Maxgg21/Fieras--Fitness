@@ -16,6 +16,12 @@
 @media (min-width: 770px) {
     .mainContainer .contenedorCard .row .contedorImagen {
         max-width: 25%!important;
-    }   
+    } 
+    
+    .precios .preciosContainer {
+      max-width: 80%;
+      flex-direction: row !important;
+      margin: auto;
+    }
 }
  

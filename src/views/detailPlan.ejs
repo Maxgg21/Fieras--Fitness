@@ -31,9 +31,9 @@
         </div>
       </article>
     </section>
-      <section id="precios" class="text-center mt-5">
+      <section id="precios" class="text-center mt-5 precios">
         <h2 class="text-bordo fw-bold mb-4">Precios</h2>
-        <div id="preciosContainer" class="d-flex flex-column gap-3 align-items-center">
+        <div id="preciosContainer" class="d-flex flex-column gap-3 align-items-center preciosContainer">
       
           <% for(let i = 0; i < plan.dias.length; i++) { %>
             <div class="bg-success-subtle p-3 rounded w-75 precio-card" data-precio="<%= plan.precio[i] %>">
