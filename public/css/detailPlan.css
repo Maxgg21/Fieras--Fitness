@@ -3,6 +3,16 @@
     max-width: 73%!important;
 }
 
+.text-orange {
+    color: #FF914D;
+  }
+  .text-bordo {
+    color: #800020;
+  }
+  .bg-success-subtle {
+    background-color: #6cbe90;
+  }
+
 @media (min-width: 770px) {
     .mainContainer .contenedorCard .row .contedorImagen {
         max-width: 25%!important;

@@ -5,7 +5,7 @@
     <header class="navContainer"><%- include("partials/header.ejs") %></header>
     <section id="mainContainer" class="mainContainer">
       <article
-        class="d-flex flex-column align-items-center contenedorCard mt-1"
+        class="d-flex flex-column align-items-center contenedorCard m-3"
       >
         <h2 class="text-center fw-bold text-bordo"><%= plan.titulo %></h2>
         <div class="row align-items-center justify-content-evenly flex-wrap">
@@ -31,6 +31,43 @@
         </div>
       </article>
     </section>
+      <section id="precios" class="text-center mt-5">
+        <h2 class="text-bordo fw-bold mb-4">Precios</h2>
+        <div id="preciosContainer" class="d-flex flex-column gap-3 align-items-center">
+      
+          <% for(let i = 0; i < plan.dias.length; i++) { %>
+            <div class="bg-success-subtle p-3 rounded w-75 precio-card" data-precio="<%= plan.precio[i] %>">
+              <h5 class="text-orange fw-bold"><%= plan.dias[i] %> VECES POR SEMANA</h5>
+              <p class="text-dark fw-semibold">$<%= plan.precio[i].toLocaleString() %></p>
+              <p>Elije el modo de pago</p>
+      
+            <div class="form-check text-start">
+              <input class="form-check-input" type="radio" name="pago<%= i %>" id="transf<%= i %>">
+              <label class="form-check-label" for="transf<%= i %>">Transferencia</label>
+            </div>
+            <div class="form-check text-start">
+              <input class="form-check-input" type="radio" name="pago<%= i %>" id="efectivo<%= i %>">
+              <label class="form-check-label" for="efectivo<%= i %>">Efectivo</label>
+            </div>
+            <div class="form-check text-start mb-2">
+              <input class="form-check-input" type="radio" name="pago<%= i %>" id="deposito<%= i %>">
+              <label class="form-check-label" for="deposito<%= i %>">Depósito</label>
+            </div>
+    
+            <button class="btn btn-warning seleccionarBtn" data-precio="<%= plan.precio[i] %>">
+              Seleccionar este plan
+            </button>
+          </div>
+        <% } %>
+      </div>
+    
+      <a id="whatsappBtn"
+         target="_blank" 
+         class="btn btn-success mt-4">
+        Quiero reservar 
+      </a>
+    </section>
+    
     <section class="m-3">
       <%- include("partials/acordionDetailPlan.ejs") %>
     </section>
@@ -46,5 +83,33 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script defer src="/js/headerNav.js"></script>
+    <script>
+      const container = document.getElementById('preciosContainer');
+      const whatsappBtn = document.getElementById('whatsappBtn');
+    
+      container.addEventListener('click', (e) => {
+        if (e.target.classList.contains('seleccionarBtn')) {
+          const card = e.target.closest('.precio-card');
+          const precio = card.getAttribute('data-precio');
+          const diasTexto = card.querySelector('h5').textContent;
+    
+          const metodoPago = card.querySelector('input[type="radio"]:checked');
+          
+          if (!metodoPago) {
+            alert('Por favor, seleccioná un método de pago');
+            return;
+          }
+    
+          const metodoTexto = card.querySelector(`label[for="${metodoPago.id}"]`).textContent;
+    
+          const mensaje = `Hola, me interesa su entramiento de ${diasTexto.toLowerCase()} (${metodoTexto}) por $${precio}`;
+          const mensajeCodificado = encodeURIComponent(mensaje);
+    
+          whatsappBtn.href = `https://wa.me/54299155782703?text=${mensajeCodificado}`;
+          whatsappBtn.textContent = `Quiero reservar por $${precio}`;
+        }
+      });
+    </script>
+    
   </body>
 </html>
