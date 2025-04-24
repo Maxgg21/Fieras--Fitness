@@ -34,13 +34,31 @@
       <section id="precios" class="text-center mt-5 precios">
         <h2 class="text-bordo fw-bold mb-4">Precios</h2>
         <% if (!plan.dias) { %>
-          <div class="bg-success-subtle p-3 rounded w-75 mx-auto precio-card">
+          <div  id="planUnico" class="bg-success-subtle p-3 rounded w-75 mx-auto precio-card" data-precio="<%= plan.precio %>">
             <h5 class="text-orange fw-bold">
               <%= plan.acceso %>
             </h5>
             <p class="text-dark fw-semibold">
               $<%= plan.precio.toLocaleString() %>
             </p>
+        
+            <p>Elije el modo de pago</p>
+            <div class="form-check text-start">
+              <input class="form-check-input" type="radio" name="pagoUnico" id="transfUnico">
+              <label class="form-check-label" for="transfUnico">Transferencia</label>
+            </div>
+            <div class="form-check text-start">
+              <input class="form-check-input" type="radio" name="pagoUnico" id="efectivoUnico">
+              <label class="form-check-label" for="efectivoUnico">Efectivo</label>
+            </div>
+            <div class="form-check text-start mb-2">
+              <input class="form-check-input" type="radio" name="pagoUnico" id="depositoUnico">
+              <label class="form-check-label" for="depositoUnico">Depósito</label>
+            </div>
+        
+            <button class="btn btn-warning seleccionarBtn" data-precio="<%= plan.precio %>">
+              Seleccionar este plan
+            </button>
           </div>
         <% } else { %>
         <div id="preciosContainer" class="d-flex flex-column gap-3 align-items-center preciosContainer">

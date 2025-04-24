@@ -13,6 +13,10 @@
     background-color: #6cbe90;
   }
 
+  .precio-card .form-check {
+    margin-bottom: 0.5rem;
+  }
+
 @media (min-width: 770px) {
     .mainContainer .contenedorCard .row .contedorImagen {
         max-width: 25%!important;
@@ -22,6 +26,10 @@
       max-width: 80%;
       flex-direction: row !important;
       margin: auto;
+    }
+
+    .precios .precio-card {
+        width: 35% !important;
     }
 }
  
