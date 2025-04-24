@@ -33,6 +33,16 @@
     </section>
       <section id="precios" class="text-center mt-5 precios">
         <h2 class="text-bordo fw-bold mb-4">Precios</h2>
+        <% if (!plan.dias) { %>
+          <div class="bg-success-subtle p-3 rounded w-75 mx-auto precio-card">
+            <h5 class="text-orange fw-bold">
+              <%= plan.acceso %>
+            </h5>
+            <p class="text-dark fw-semibold">
+              $<%= plan.precio.toLocaleString() %>
+            </p>
+          </div>
+        <% } else { %>
         <div id="preciosContainer" class="d-flex flex-column gap-3 align-items-center preciosContainer">
       
           <% for(let i = 0; i < plan.dias.length; i++) { %>
@@ -60,7 +70,7 @@
           </div>
         <% } %>
       </div>
-    
+      <% } %>
       <a id="whatsappBtn"
          target="_blank" 
          class="btn btn-success mt-4">
@@ -83,33 +93,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script defer src="/js/headerNav.js"></script>
-    <script>
-      const container = document.getElementById('preciosContainer');
-      const whatsappBtn = document.getElementById('whatsappBtn');
-    
-      container.addEventListener('click', (e) => {
-        if (e.target.classList.contains('seleccionarBtn')) {
-          const card = e.target.closest('.precio-card');
-          const precio = card.getAttribute('data-precio');
-          const diasTexto = card.querySelector('h5').textContent;
-    
-          const metodoPago = card.querySelector('input[type="radio"]:checked');
-          
-          if (!metodoPago) {
-            alert('Por favor, seleccioná un método de pago');
-            return;
-          }
-    
-          const metodoTexto = card.querySelector(`label[for="${metodoPago.id}"]`).textContent;
-    
-          const mensaje = `Hola, me interesa su entramiento de ${diasTexto.toLowerCase()} (${metodoTexto}) por $${precio}`;
-          const mensajeCodificado = encodeURIComponent(mensaje);
-    
-          whatsappBtn.href = `https://wa.me/54299155782703?text=${mensajeCodificado}`;
-          whatsappBtn.textContent = `Quiero reservar por $${precio}`;
-        }
-      });
-    </script>
+    <script defer src="/js/detailPlan.js"></script>
     
   </body>
 </html>
