@@ -22,12 +22,7 @@ module.exports = {
     },
     sobreMi: (req, res) => {
         res.render('sobreMi', {
-            title: "Sobre mí",
-            name: "Joaquín",
-            lastName: "González",
-            age: 24,
-            hobbies: ["Futbol", "Programación", "Música"],
-            aboutMe: "Soy un apasionado de la programación y el desarrollo web. Me encanta aprender cosas nuevas y enfrentar desafíos.",
+            planes,
             toThousand
         })
     }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("partials/head")%>
+  <body>
+    <div class="navContainer"><%- include("partials/header.ejs") %></div>
+    <section class="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="contenido">
+        <img src="images/imagen19.webp" alt="Mariana Cabeda" class="foto">
+        <div class="texto">
+          <h3>MARIANA CABEDA</h3>
+          <p class="profesion">PROFESORA FITNESS</p>
+          <p class="descripcion">
+            Lorem ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="valores">
+      <h2>VALORES DE FIERAS FITNESS</h2>
+      <div class="contenedor-valores">
+        <div class="tarjeta" style="background-color: #FF914D;">
+          <img src="images/valores/valor1.png" alt="Valor 1">
+          <p>nombre de valor</p>
+        </div>
+        <div class="tarjeta" style="background-color: #FFDE59;">
+          <img src="images/valores/valor4.png" alt="Valor 2">
+          <p>nombre de valor</p>
+        </div>
+        <div class="tarjeta" style="background-color: #81C784;">
+          <img src="images/valores/valor2.png" alt="Valor 3">
+          <p>nombre de valor</p>
+        </div>
+        <div class="tarjeta" style="background-color: #FF914D;">
+          <img src="images/valores/valor3.png" alt="Valor 4">
+          <p>nombre de valor</p>
+        </div>
+      </div>
+    </section>
+    <%- include("partials/footer.ejs") %>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/js/headerNav.js"></script>
+  </body>
+</html>
