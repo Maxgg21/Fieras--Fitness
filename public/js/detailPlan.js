@@ -15,7 +15,7 @@ function configurarBoton(card, precio, descripcion) {
   const mensaje = `Hola, me interesa su entrenamiento de ${descripcion.toLowerCase()} (${metodoTexto}) por $${precio}`;
   const mensajeCodificado = encodeURIComponent(mensaje);
 
-  whatsappBtn.href = `https://wa.me/54299155782703?text=${mensajeCodificado}`;
+  whatsappBtn.href = `https://wa.me/5492996226227?text=${mensajeCodificado}`;
   whatsappBtn.textContent = `Quiero reservar por $${precio}`;
 }
 
