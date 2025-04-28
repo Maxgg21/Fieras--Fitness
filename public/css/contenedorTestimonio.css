@@ -1,3 +1,5 @@
+
+
 .contenedorTestimonio {
     display: flex;
     justify-content: center;
@@ -10,7 +12,8 @@
 }
 
 .contenedorTestimonio h2 {
-    color: #505050;
+    color: black;
+    text-shadow: 0 3px 6px #ff6f1f
 }
 
 .swiper {
